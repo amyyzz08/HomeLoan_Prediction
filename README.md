@@ -19,7 +19,8 @@
 <hr>
 <p>The dataset used in this project is found on <a href="https://www.kaggle.com/">Kaggle.com</a></p>
 <p>Below shows the variables and its definitions</p>
-|Variable|Definition|
+
+Variable|Definition|
 |:----------|:----------|
 |Gender|Male or Female|
 |Married|Applicant Married (Y/N)|
@@ -37,6 +38,7 @@ Property_Area|What area type is the protery located at? (Urban/Semi-Urban/Rural)
 <hr>
 <p>For this project, the type of Machine Learning algorithm that was focussed on was Supervised Learning. The ML algorithm was given a sample of data to train on where the dependent variable being the approval loan status was present.</p>
 <p>The remiaing data set was used as the test sample and the dependent variable is removed to see how accurate the model is.</p>
+
 
 
 
