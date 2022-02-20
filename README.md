@@ -37,6 +37,7 @@ Variable|Definition|
 <hr>
 <p>For this project, the type of Machine Learning algorithm that was focussed on was Supervised Learning. The ML algorithm was given a sample of data to train on where the dependent variable being the approval loan status was present.</p>
 <p>The remiaing data set was used as the test sample and the dependent variable is removed to see how accurate the model is.</p>
+<p>The chosen model for this project is a Logistic Regression model where the prediction will be classified as either the loan will be approved (Y) or no the loan will not be approved (N)
 
 
 
