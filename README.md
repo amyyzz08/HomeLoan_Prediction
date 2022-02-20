@@ -5,7 +5,7 @@
 <p>A lot of factors are considered when making the decision wheather or not a home loan is approved by Banks or other financial institutions. 
 </p>
 
-<p>With the help of machine learning and the details of an applicants details of their current living and financial situations, we can predict if the applicant is elibible for a particular home loan or not.</p>
+<p>With the help of machine learning and the details of an applicants details of their current living and financial situations, we can predict if the applicant is eligible for a particular home loan or not.</p>
 
 <p>Following this notion, I was curious to see what factors would impact the loan approval status the most and the strength of these correlations.</p>
 
@@ -30,9 +30,8 @@ Variable|Definition|
 |ApplicantIncome|Applicant's income| 
 |CoapplicantIncome|Co-Applicant's income| 
 |LoanAmount|The loan amount the apllicant wishes to apply for (in thousands)| 
-Loan_Amount_Term|Loan term in months|
-Credit_History|Does the credit history meet the guidelines (Y/N)|
-Property_Area|What area type is the protery located at? (Urban/Semi-Urban/Rural)|
+|Credit_History|Does the credit history meet the guidelines (Y/N)|
+|Property_Area|What area type is the protery located at? (Urban/Semi-Urban/Rural)|
 
 <h3><b>Selecting the Model</b></h3>
 <hr>
