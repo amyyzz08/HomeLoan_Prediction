@@ -49,9 +49,9 @@ Variable|Definition|
 <hr>
 
 * <h3>How to install Python requirements/ dependencies</h3>
-  <p>Pip install requirement.txt ...
+  <p>Pip install requirement.txt
 * <h3>How to run the code locally</h3>
-  <p>In terminal, run the code: pip install app.py ...
+  <p>In terminal, run the code: pip install app.py
 * <h3>How to deploy the code to AWS</h3>
   <p>
 
