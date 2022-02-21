@@ -30,8 +30,7 @@ Variable|Definition|
 |Married|Applicant Married (Y/N)|
 |Dependants|Number of dependents the applicant has|
 |Self_Employed|Is the applicant self-employed? (Y/N)|
-|ApplicantIncome|Applicant's income| 
-|CoapplicantIncome|Co-Applicant's income| 
+|Total_Income|Applicant's and Co-applicant's (if applicable) income combined| 
 |LoanAmount|The loan amount the apllicant wishes to apply for (in thousands)| 
 |Credit_History|Does the credit history meet the guidelines (Y/N)|
 |Property_Area|What area type is the property located at? (Urban/SemiUrban/Rural)|
@@ -40,10 +39,12 @@ Variable|Definition|
 <hr>
 <p>For this project, the type of Machine Learning algorithm that was focussed on was Supervised Learning. The ML algorithm was given a sample of data to train on where the dependent variable being the approval loan status was present.</p>
 <p>The remiaing data set was used as the test sample and the dependent variable is removed to see how accurate the model is.</p>
-<p>The chosen model for this project is a Logistic Regression model where the prediction will be classified as either the loan <u>will be approved</u> (Y) or no the loan <u>will not be approved</u> (N)
+<p>The chosen model for this project is a Logistic Regression model where the prediction will be classified as either the home loan will be approved (Y) or the home loan will not be approved (N)
 
-
-
+<b><u>Model Metrics</u></b>
+<br>
+<p>R-Value: </p>
+<p>Prediction score: </p>
 
 <h3><b>Usage</b></h3>
 <hr>
