@@ -2,29 +2,28 @@
 <html lang="en-us">
   <head>
     <meta charset="UTF-8" />
-    <title>Home Loan Eligibility</title>
+    <title>Prediction Page</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="predict.css">
   </head>
-  
+
   <body>
     <div class="background">
-        <ul class="navbar">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Predict</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Summary</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Data</a>
-          </li>
-        </ul>
-    <hr>
-    <br>
+    <ul class="navbar">
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="predict.html">Predict</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="stats.html">Summary</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Data</a>
+      </li>
+    </ul>
+<hr>
     <div class="container">
       <div class="title">Application Form</div>
       <form action="#">
@@ -100,11 +99,11 @@
                 </div>
             </div>
             <div class="input-box">
-                <span class="details">Total Income</span>
+                <span class="details">Total Income *per month</span>
                 <input type="text" placeholder="Enter Monthly Income" required>
             </div>
             <div class="input-box">
-                <span class="details">Loan Amount</span>
+                <span class="details">Loan Amount *in thousands</span>
                 <input type="text" placeholder="Enter Loan Amount" required>
             </div>
             <div class="input-box">
@@ -132,5 +131,8 @@
           </div>
       </form>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="predict.js"></script>
   </body>
 </html>

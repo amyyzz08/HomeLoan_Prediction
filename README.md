@@ -32,7 +32,7 @@ Variable|Definition|
 |Self_Employed|Is the applicant self-employed? (Y/N)|
 |Total_Income|Applicant's and Co-applicant's (if applicable) income combined| 
 |LoanAmount|The loan amount the apllicant wishes to apply for (in thousands)| 
-|Credit_History|Does the credit history meet the guidelines (Y/N)|
+|Credit_History|1.0: Applicant has repaid their previous debt<br> 0.0: Applicant has not repaid their previous debt|
 |Property_Area|What area type is the property located at? (Urban/SemiUrban/Rural)|
 
 <h3><b>Selecting the Model</b></h3>
