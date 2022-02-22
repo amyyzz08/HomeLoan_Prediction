@@ -1,0 +1,183 @@
+.background {
+    width : 100%;
+    height: 100vh;
+    background-image:url("https://thumbs.dreamstime.com/b/city-skylines-background-vector-illustration-flat-city-building-up-town-infographic-design-62993492.jpg");
+    background-position: center;
+    background-size: cover;
+    padding-right:10%;
+    padding-left:10%;
+    box-sizing:border-box;
+}
+.nav-link{
+    list-style:none;
+    display: inline-block;
+    margin-left:10px;
+    color:black;
+}
+.navbar{
+    height:10px;
+    display:flex;
+    align-items: center;
+    padding-bottom: 30px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins'
+}
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    font-weight:500;
+
+}
+.container {
+    max-width: 700px;
+    width: 150%;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+}
+.container .title{
+    font-size: 25px;
+    font-weight: 500;
+    text-align: center;
+    padding:10px;
+    font-weight: inherit;
+    padding-bottom: 20px;
+}
+.container form .user-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+form .user-details .input-box {
+    margin-left: 5px;
+    display: block;
+    height: 45px;
+    width:100%;
+    outline: none;
+    border-radius: 5px;
+    padding-left:15px;
+}
+.gender{
+    padding: 10px;
+}
+form .gender-details .category {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin:14px 0;
+}
+.gender-details .category label{
+    display: flex;
+    align-items: center;
+}
+.gender-details .category .dot{
+    height: 10px;
+    width: 10px;
+    background: #d9d9d9;
+    padding: 5px;
+    border-radius: 50%;
+    border: 5px solid transparent;
+}
+.marital{
+    padding: 10px;
+}
+form .marital-details .marital-category {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin:14px 0;
+}
+.marital-details .marital-category label{
+    display: flex;
+    align-items: center;
+}
+.marital-details .marital-category .dot{
+    height: 10px;
+    width: 10px;
+    background: #d9d9d9;
+    padding: 5px;
+    border-radius: 50%;
+    border: 5px solid transparent;
+}
+.dep{
+    padding: 10px;
+}
+form .dep-details .dep-category {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin:14px 0;
+}
+.dep-details .dep-category label{
+    display: flex;
+    align-items: center;
+}
+.dep-details .dep-category .dot{
+    height: 10px;
+    width: 10px;
+    background: #d9d9d9;
+    padding: 5px;
+    border-radius: 50%;
+    border: 5px solid transparent;
+}
+.emp{
+    padding: 10px;
+}
+form .emp-details .emp-category {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin:14px 0;
+}
+.emp-details .emp-category label{
+    display: flex;
+    align-items: center;
+}
+.emp-details .emp-category .dot{
+    height: 10px;
+    width: 10px;
+    background: #d9d9d9;
+    padding: 5px;
+    border-radius: 50%;
+    border: 5px solid transparent;
+}
+.span .details {
+    padding-left: 20px;
+    padding-bottom: 10px;
+}
+#dot-1:checked ~ .category label .one,
+#dot-2:checked ~ .category label .two{
+    background: black;
+    border-color: #d9d9d9;
+}
+#dot-3:checked ~ .marital-category label .three,
+#dot-4:checked ~ .marital-category label .four{
+    background: black;
+    border-color: #d9d9d9;
+}
+#dot-5:checked ~ .dep-category label .five,
+#dot-6:checked ~ .dep-category label .six,
+#dot-7:checked ~ .dep-category label .seven,
+#dot-8:checked ~ .dep-category label .eight{
+    background: black;
+    border-color: #d9d9d9;
+}
+#dot-9:checked ~ .emp-category label .nine,
+#dot-10:checked ~ .emp-category label .ten{
+    background: black;
+    border-color: #d9d9d9;
+}
+form input[type="radio"]{
+    display: none;
+}
+.button{
+    height: 50px;
+    width: 100%;
+
+}

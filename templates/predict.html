@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Home Loan Eligibility</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="predict.css">
+  </head>
+  
+  <body>
+    <div class="background">
+        <ul class="navbar">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Predict</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Summary</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Data</a>
+          </li>
+        </ul>
+    <hr>
+    <br>
+    <div class="container">
+      <div class="title">Application Form</div>
+      <form action="#">
+          <div class="user-details">
+              <div class="gender-details">
+                  <input type="radio" name="gender" id="dot-1">
+                  <input type="radio" name="gender" id="dot-2">
+                <span class="gender-title">Gender</span>
+                <div class="category">
+                    <label for="dot-1">
+                        <span class="dot one"></span>
+                        <span class="gender">Male</span>
+                    </label>
+                    <label for="dot-2">
+                        <span class="dot two"></span>
+                        <span class="gender">Female</span>
+                    </label>
+                </div>
+            </div>
+            <div class="marital-details">
+                <input type="radio" name="marital" id="dot-3">
+                <input type="radio" name="marital" id="dot-4">
+                <span class="marital-title">Marital Status</span>
+                <div class="marital-category">
+                    <label for="dot-3">
+                        <span class="dot three"></span>
+                        <span class="marital">Single</span>
+                    </label>
+                    <label for="dot-4">
+                        <span class="dot four"></span>
+                        <span class="marital">Married</span>
+                    </label>
+                </div>
+            </div>
+            <div class="dep-details">
+                <input type="radio" name="dep" id="dot-5">
+                <input type="radio" name="dep" id="dot-6">
+                <input type="radio" name="dep" id="dot-7">
+                <input type="radio" name="dep" id="dot-8">
+                <span class="dep-title">Number of Dependents</span>
+                <div class="dep-category">
+                    <label for="dot-5">
+                        <span class="dot five"></span>
+                        <span class="dep">0</span>
+                    </label>
+                    <label for="dot-6">
+                        <span class="dot six"></span>
+                        <span class="dep">1</span>
+                    </label>
+                    <label for="dot-7">
+                        <span class="dot seven"></span>
+                        <span class="dep">2</span>
+                    </label>
+                    <label for="dot-8">
+                        <span class="dot eight"></span>
+                        <span class="dep">3+</span>
+                    </label>
+                </div>
+            </div>
+            <div class="emp-details">
+                <input type="radio" name="emp" id="dot-9">
+                <input type="radio" name="emp" id="dot-10">
+                <span class="emp-title">Self-Employed?</span>
+                <div class="emp-category">
+                    <label for="dot-9">
+                        <span class="dot nine"></span>
+                        <span class="emp">Yes</span>
+                    </label>
+                    <label for="dot-10">
+                        <span class="dot ten"></span>
+                        <span class="emp">No</span>
+                    </label>
+                </div>
+            </div>
+            <div class="input-box">
+                <span class="details">Total Income</span>
+                <input type="text" placeholder="Enter Monthly Income" required>
+            </div>
+            <div class="input-box">
+                <span class="details">Loan Amount</span>
+                <input type="text" placeholder="Enter Loan Amount" required>
+            </div>
+            <div class="input-box">
+                <span class="details">Credit History</span>
+                <input type="text" placeholder="Enter your full name" required>
+                <div class="toast align-items-center" role="alert" aria-live="assertive" aria-atomic="true">
+                    <div class="d-flex">
+                      <div class="toast-body">
+                      Hello, world! This is a toast message.
+                     </div>
+                      <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          <div class="prop-details">
+              <div><select name="pro-type">
+                <span class="prop-title">Property Type</span>
+                <div class="prop-category">
+                  <option value="urban">Urban</option>
+                  <option value="semiurban">SemiUrban</option>
+                  <option value="rural">Rural</option>
+                  </div>
+              </select></div>
+          </div>
+      </form>
+    </div>
+  </body>
+</html>
