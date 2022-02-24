@@ -28,6 +28,7 @@
       <div class="title">Application Form</div>
       <form action="#">
           <div class="user-details">
+
               <div class="gender-details">
                   <input type="radio" name="gender" id="dot-1">
                   <input type="radio" name="gender" id="dot-2">
@@ -43,6 +44,7 @@
                     </label>
                 </div>
             </div>
+
             <div class="marital-details">
                 <input type="radio" name="marital" id="dot-3">
                 <input type="radio" name="marital" id="dot-4">
@@ -58,6 +60,7 @@
                     </label>
                 </div>
             </div>
+
             <div class="dep-details">
                 <input type="radio" name="dep" id="dot-5">
                 <input type="radio" name="dep" id="dot-6">
@@ -83,6 +86,7 @@
                     </label>
                 </div>
             </div>
+
             <div class="emp-details">
                 <input type="radio" name="emp" id="dot-9">
                 <input type="radio" name="emp" id="dot-10">
@@ -98,38 +102,42 @@
                     </label>
                 </div>
             </div>
+
             <div class="input-box">
-                <span class="details">Total Income *per month</span>
-                <input type="text" placeholder="Enter Monthly Income" required>
+                <span class="details">Total Income</span>
+                <input type="text" placeholder="Enter Monthly Income" required>   
             </div>
+
             <div class="input-box">
-                <span class="details">Loan Amount *in thousands</span>
+                <span class="details">Loan Amount </span>
                 <input type="text" placeholder="Enter Loan Amount" required>
             </div>
-            <div class="input-box">
-                <span class="details">Credit History</span>
-                <input type="text" placeholder="Enter your full name" required>
-                <div class="toast align-items-center" role="alert" aria-live="assertive" aria-atomic="true">
-                    <div class="d-flex">
-                      <div class="toast-body">
-                      Hello, world! This is a toast message.
-                     </div>
-                      <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
-                    </div>
-                  </div>
-                </div>
+
+            <div class="mb-3">
+              <label class="form-label" for="history">Credit History</label>
+              <select class="form-select" id="history" name="history">
+                  <option value="history-one">No Outstanding Debt</option>
+                  <option value="history-two">Have Outstanding Debt</option>
+              </select>
             </div>
-          <div class="prop-details">
-              <div><select name="pro-type">
-                <span class="prop-title">Property Type</span>
-                <div class="prop-category">
-                  <option value="urban">Urban</option>
-                  <option value="semiurban">SemiUrban</option>
-                  <option value="rural">Rural</option>
-                  </div>
-              </select></div>
+
+            <div class="col-8">
+              <label class="form-label" for="area">Property Area Type</label>
+              <select class="form-select" id="area" name="area">
+                <option value="one">Urban</option>
+                <option value="semiurban">SemiUrban</option>
+                <option value="rural">Rural</option>
+              </select>
+            </div>
+
+            <div class="col-8">
+              <button type="button" class="btn btn-dark" id="forecast">Submit</button>
+            </div>
+            
           </div>
-      </form>
+        </div>
+      </div>
+      </form> 
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>

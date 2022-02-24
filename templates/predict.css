@@ -44,7 +44,6 @@ body {
 .container .title{
     font-size: 25px;
     font-weight: 500;
-    text-align: center;
     padding:10px;
     font-weight: inherit;
     padding-bottom: 20px;
@@ -177,7 +176,30 @@ form input[type="radio"]{
     display: none;
 }
 .button{
-    height: 50px;
-    width: 100%;
+    width: 180px;
+    padding: 12px 0;
+    border:0;
+    border-radius:20px;
+    outline:none;
+    margin-top:30px;
 
+}
+.form-text{
+    padding:2px;
+}
+.input-box{
+    padding:5px;
+}
+.mb-3{
+    padding-left:20px;
+    padding-top: 10px;
+}
+.mb-4{
+    padding-right: 25px;
+}
+.col-8{
+    padding-left: 15px;
+}
+.btn{
+    width:100px;
 }
