@@ -14,13 +14,10 @@
         <a class="nav-link active" aria-current="page" href="index.html">Home</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="predict.html">Predict</a>
-      </li>
-      <li class="nav-item">
         <a class="nav-link" href="stats.html">Summary</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Data</a>
+        <a class="nav-link" href="data.html">Data</a>
       </li>
     </ul>
 <hr>
@@ -30,15 +27,15 @@
           <div class="user-details">
 
               <div class="gender-details">
-                  <input type="radio" name="gender" id="dot-1">
-                  <input type="radio" name="gender" id="dot-2">
+                  <input type="radio" name="gender" id="dot-1" value="Male">
+                  <input type="radio" name="gender" id="dot-2" value="Female">
                 <span class="gender-title">Gender</span>
-                <div class="category">
+                <div class="category" id="gender">
                     <label for="dot-1">
                         <span class="dot one"></span>
                         <span class="gender">Male</span>
                     </label>
-                    <label for="dot-2">
+                    <label for="dot-2" >
                         <span class="dot two"></span>
                         <span class="gender">Female</span>
                     </label>
@@ -46,10 +43,10 @@
             </div>
 
             <div class="marital-details">
-                <input type="radio" name="marital" id="dot-3">
-                <input type="radio" name="marital" id="dot-4">
+                <input type="radio" name="marital" id="dot-3" value="Yes">
+                <input type="radio" name="marital" id="dot-4" value="No">
                 <span class="marital-title">Married</span>
-                <div class="marital-category">
+                <div class="marital-category" id="married">
                     <label for="dot-3">
                         <span class="dot three"></span>
                         <span class="marital">Yes</span>
@@ -63,12 +60,12 @@
             
             <div class="col-4">
             <div class="dep-details">
-                <input type="radio" name="dep" id="dot-5">
-                <input type="radio" name="dep" id="dot-6">
-                <input type="radio" name="dep" id="dot-7">
-                <input type="radio" name="dep" id="dot-8">
+                <input type="radio" name="dep" id="dot-5" value="0">
+                <input type="radio" name="dep" id="dot-6" value="1">
+                <input type="radio" name="dep" id="dot-7" value="2">
+                <input type="radio" name="dep" id="dot-8" value="3+">
                 <span class="dep-title">Number of Dependents</span>
-                <div class="dep-category">
+                <div class="dep-category" id="dependents">
                     <label for="dot-5">
                         <span class="dot five"></span>
                         <span class="dep">0</span>
@@ -91,10 +88,10 @@
 
 
             <div class="emp-details">
-                <input type="radio" name="emp" id="dot-9">
-                <input type="radio" name="emp" id="dot-10">
+                <input type="radio" name="emp" id="dot-9" value="Yes">
+                <input type="radio" name="emp" id="dot-10" value="No">
                 <span class="emp-title">Self-Employed?</span>
-                <div class="emp-category">
+                <div class="emp-category" id="emp">
                     <label for="dot-9">
                         <span class="dot nine"></span>
                         <span class="emp">Yes</span>
@@ -108,34 +105,36 @@
 
             <div class="input-box">
                 <span class="details">Total Income</span>
-                <input type="text" placeholder="Enter Monthly Income" required>   
+                <input type="text" id="total_income" placeholder="Enter Monthly Income" required>   
             </div>
 
             <div class="input-box">
                 <span class="details">Loan Amount </span>
-                <input type="text" placeholder="Enter Loan Amount" required>
+                <input type="text" id="loan_amount" placeholder="Enter Loan Amount" required>
             </div>
 
             <div class="mb-3">
               <label class="form-label" for="history">Credit History</label>
               <select class="form-select" id="history" name="history">
-                  <option value="history-one">No Outstanding Debt</option>
-                  <option value="history-two">Have Outstanding Debt</option>
+                  <option value="1.0">No Outstanding Debt</option>
+                  <option value="0.0">Have Outstanding Debt</option>
               </select>
             </div>
 
             <div class="col-8">
               <label class="form-label" for="area">Property Area Type</label>
               <select class="form-select" id="area" name="area">
-                <option value="one">Urban</option>
-                <option value="semiurban">SemiUrban</option>
-                <option value="rural">Rural</option>
+                <option value="Urban">Urban</option>
+                <option value="Semiurban">SemiUrban</option>
+                <option value="Rural">Rural</option>
               </select>
             </div>
 
             <div class="col-8">
               <button type="button" class="btn btn-dark" id="predict">Submit</button>
             </div>
+
+            <div class="row" style="padding-top: 50px;" id="forecasted-status">
             
           </div>
         </div>
