@@ -9,7 +9,7 @@
 
 <p>With the help of machine learning and the details of an applicants details of their current living and financial situations, we can predict if the applicant is eligible for a particular home loan or not.</p>
 
-<p>Following this notion, I was curious to see what factors would impact the loan approval status the most and the strength of these correlations.</p>
+<p>Following this notion, I was curious to investigate any trends in the dataset and whether a few independent variables together alone would affect the loan status</p>
 
 
 <h3><b>Solution Architecture</b></h3>
@@ -32,7 +32,7 @@ Variable|Definition|
 |Self_Employed|Is the applicant self-employed? (Y/N)|
 |Total_Income|Applicant's and Co-applicant's (if applicable) income combined| 
 |LoanAmount|The loan amount the apllicant wishes to apply for (in thousands)| 
-|Credit_History|1.0: Applicant has repaid their previous debt<br> 0.0: Applicant has not repaid their previous debt|
+|Credit_History|0.0: Applicant has not repaid their previous debt1.0: Applicant has repaid their previous debt<br> 1.0: Applicant has repaid their previous debt|
 |Property_Area|What area type is the property located at? (Urban/SemiUrban/Rural)|
 
 <h3><b>Selecting the Model</b></h3>

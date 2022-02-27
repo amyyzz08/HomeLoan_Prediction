@@ -1,0 +1,95 @@
+.background {
+    width : 100%;
+    height: 100vh;
+    background-image:url("https://thumbs.dreamstime.com/b/city-skylines-background-vector-illustration-flat-city-building-up-town-infographic-design-62993492.jpg");
+    background-position: center;
+    background-size: cover;
+    padding-right:10%;
+    padding-left:10%;
+    box-sizing:border-box;
+}
+.header{
+    text-align: center;
+    padding: 10px;
+    font-size: xx-large;
+    box-sizing:border-box;
+    border-radius: 10px;
+    border-style:groove;
+    line-height: 3;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+.grid{
+    margin: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+}
+.grid > article{
+    background: #fff;
+    border: none;
+    box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.3);
+    border-radius: 20px;
+    text-align: center;
+    width: 250px;
+    transition: transform .3s;
+    margin-bottom: 70px;
+}
+.grid > article:hover{
+    transform: translateY(5px);
+    box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.3);
+}
+.grid > article img{
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding:10px;
+}
+.text{
+    padding: 0 20px 20px;
+}
+.text h5{
+    font-weight: 500;
+    padding: 5px;
+    padding-top: 5px;
+}
+.text button{
+    background: #ef6f6c;
+    border-radius: 20px;
+    border: none;
+    color: #fff;
+    padding: 10px;
+    width: 100%;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+
+}
+.nav-link{
+    list-style:none;
+    display: inline-block;
+    margin-left:10px;
+    color:black;
+}
+.navbar{
+    height:10px;
+    display:flex;
+    align-items: center;
+    padding-bottom: 30px;
+}
+.text{
+    text-align:center;
+}
+.nav-item{
+    list-style:none;
+    display: inline-block;
+    margin-left:60px;
+}
+.text h2 h3{
+    margin-left:-20px;
+}
+
+
+

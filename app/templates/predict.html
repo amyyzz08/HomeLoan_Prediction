@@ -4,25 +4,26 @@
     <meta charset="UTF-8" />
     <title>Prediction Page</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="predict.css">
+    <link rel="stylesheet" href="../static/css/predict.css">
   </head>
 
   <body>
     <div class="background">
     <ul class="navbar">
       <li class="nav-item">
-        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+        <a class="nav-link active" aria-current="page" href="/">Home</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="stats.html">Summary</a>
+        <a class="nav-link" href="/visualisations">Visualisations</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="data.html">Data</a>
+        <a class="nav-link" href="/data">Data</a>
       </li>
     </ul>
 <hr>
     <div class="container">
       <div class="title">Application Form</div>
+      <hr>
       <form action="#">
           <div class="user-details">
 
@@ -131,10 +132,10 @@
             </div>
 
             <div class="col-8">
-              <button type="button" class="btn btn-dark" id="predict">Submit</button>
+              <button  type="button" class="btn btn-outline-secondary" id="predict">Submit</button>
             </div>
 
-            <div class="row" style="padding-top: 50px;" id="forecasted-status">
+            <div class="row" style="padding-top: 20px;" id="predicted-status">
             
           </div>
         </div>
@@ -143,6 +144,7 @@
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-    <script src="predict.js"></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="../static/js/predict.js"></script>
   </body>
 </html>

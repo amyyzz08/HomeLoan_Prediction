@@ -1,7 +1,5 @@
 from flask import Flask, render_template 
 import pandas as pd
-from sqlalchemy import create_engine
-from sqlalchemy.engine import URL
 import os 
 from prediction import predict
 
@@ -33,10 +31,10 @@ def index():
     return render_template("index.html")
 
 @app.route("/predict")
-def index():
+def predict_page():
     return render_template("predict.html")    
 
-@app.route("/predict/<gender>/<married>/<dependents>/<self_employed>/<loan_amount>/<credit history>/<property_area>/<total_income>", methods=["GET"])
+@app.route("/predict/<gender>/<married>/<dependents>/<self_employed>/<loan_amount>/<credit_history>/<property_area>/<total_income>",methods=["GET"])
 def do_predict(gender, married, dependents, self_employed, loan_amount, credit_history, property_area, total_income):
     user_inputs = {
         "gender":gender,
@@ -48,13 +46,13 @@ def do_predict(gender, married, dependents, self_employed, loan_amount, credit_h
         "property_area": property_area,
         "total_income":float(total_income)
     }
-    prediction = predict(user_inputs)
+    prediction = int(predict(user_inputs)[0])
 
     return {"prediction": prediction}
 
 
 @app.route("/visualisations")
-def forecast():
+def visuals():
     return render_template("stats.html")
 
 
