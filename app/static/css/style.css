@@ -24,6 +24,9 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
+    position: relative;
+    bottom: 130px;
+    left:25px;
 }
 .grid > article{
     background: #fff;
@@ -89,6 +92,29 @@
 }
 .text h2 h3{
     margin-left:-20px;
+}
+.head-text{
+    margin-left:100px;
+    padding:10px;
+}
+.head-p{
+    position:relative;
+    left:350px;
+    bottom:70px;
+}
+.head-p2{
+    position:relative;
+    left:350px;
+    bottom:85px;
+}
+.head-p3{
+    position:relative;
+    left:350px;
+    bottom:100px;
+}
+h4{
+    position: relative;
+    left:60px;
 }
 
 

@@ -38,6 +38,10 @@ def do_predict(gender, married, dependents, self_employed, loan_amount, credit_h
 def visuals():
     return render_template("stats.html")
 
+@app.route("/data")
+def data():
+    return render_template("data.html")
+
 
 if __name__ == "__main__":
     app.run(debug=True)

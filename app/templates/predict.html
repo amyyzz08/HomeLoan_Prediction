@@ -9,15 +9,13 @@
 
   <body>
     <div class="background">
-    <ul class="navbar">
-      <li class="nav-item">
-        <a class="nav-link active" aria-current="page" href="/">Home</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="/visualisations">Visualisations</a>
-      </li>
-    </ul>
-<hr>
+      <nav>
+        <ul class="nav-area">
+          <li><a href="/">Home</a> </li>
+          <li><a href="/visualisations">Visualisations</a> </li>
+          <li><a href="/data">Data</a> </li>
+          </ul>
+      </nav>
     <div class="container">
       <div class="title">Application Form</div>
       <hr>
@@ -103,28 +101,28 @@
 
             <div class="input-box">
                 <span class="details">Total Income</span>
-                <input type="text" id="total_income" placeholder="Enter Monthly Income" required>   
+                <input type="text" id="total_income" placeholder="Enter Monthly Income" style="text-align: center"required>   
             </div>
 
             <div class="input-box">
                 <span class="details">Loan Amount </span>
-                <input type="text" id="loan_amount" placeholder="Enter Loan Amount" required>
+                <input type="text" id="loan_amount" placeholder="Enter Loan Amount" style="text-align: center">
             </div>
 
             <div class="mb-3">
               <label class="form-label" for="history">Credit History</label>
               <select class="form-select" id="history" name="history">
-                  <option value="1.0">No Outstanding Debt</option>
-                  <option value="0.0">Have Outstanding Debt</option>
+                  <option class="option"value="1.0">No Outstanding Debt</option>
+                  <option class="option"value="0.0">Have Outstanding Debt</option>
               </select>
             </div>
 
-            <div class="col-8">
+            <div class="col-8 ">
               <label class="form-label" for="area">Property Area Type</label>
               <select class="form-select" id="area" name="area">
-                <option value="Urban">Urban</option>
-                <option value="Semiurban">SemiUrban</option>
-                <option value="Rural">Rural</option>
+                <option class="option"value="Urban">Urban</option>
+                <option class="option"value="Semiurban">SemiUrban</option>
+                <option class="option"value="Rural">Rural</option>
               </select>
             </div>
 
