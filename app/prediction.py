@@ -4,8 +4,8 @@ import joblib
 # Function to predict result based on user input
 
 def predict(user_inputs):
-    classifier = joblib.load("classifier.sav")
-    encoder=joblib.load("encoder.sav")
+    classifier = joblib.load("static/py/classifier.sav")
+    encoder=joblib.load("static/py/encoder.sav")
 
     gender = user_inputs["gender"]
     married = user_inputs["married"]

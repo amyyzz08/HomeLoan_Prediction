@@ -9,13 +9,13 @@
 
 <p>With the help of machine learning and the details of an applicants details of their current living and financial situations, we can predict if the applicant is eligible for a particular home loan or not.</p>
 
-<p>Following this notion, I was curious to investigate any trends in the dataset and whether a few independent variables together alone would affect the loan status</p>
+<p>Following this notion, I was curious to investigate any trends in the dataset and whether a few independent variables together alone would affect the loan status.</p>
 
 
 <h3><b>Solution Architecture</b></h3>
 <hr>
 
-<Insert image here!!>
+![](images/solution.png)
 
 
 
@@ -31,8 +31,8 @@ Variable|Definition|
 |Dependants|Number of dependents the applicant has|
 |Self_Employed|Is the applicant self-employed? (Y/N)|
 |Total_Income|Applicant's and Co-applicant's (if applicable) income combined| 
-|LoanAmount|The loan amount the apllicant wishes to apply for (in thousands)| 
-|Credit_History|0.0: Applicant has not repaid their previous debt1.0: Applicant has repaid their previous debt<br> 1.0: Applicant has repaid their previous debt|
+|LoanAmount|The loan amount the apllicant wishes to apply for (in thousands)|
+|Credit_History|0.0: Applicant has not repaid their previous debt<br> 1.0: Applicant has repaid their previous debt|
 |Property_Area|What area type is the property located at? (Urban/SemiUrban/Rural)|
 
 <h3><b>Selecting the Model</b></h3>
@@ -43,16 +43,35 @@ Variable|Definition|
 
 <b><u>Model Metrics</u></b>
 <br>
-<p>R-Value: </p>
-<p>Prediction score: </p>
+ ![](images/test.png)
 
 <h3><b>Usage</b></h3>
 <hr>
 
-* <h3>How to install Python requirements/ dependencies</h3>
-  <p>Pip install requirement.txt
-* <h3>How to run the code locally</h3>
-  <p>In terminal, run the code: pip install app.py
-* <h3>How to deploy the code to AWS</h3>
-  <p>
+<h3><b>1. How to install Python requirements/ dependencies</b></h3>
+  <p>Pip install requirement.txt in terminal to install.
+<h3><b>2. How to run the code locally</b></h3>
+  <p>In terminal, run python app.py in the PythonData environment and copy the url into your web browser
+
+  ![](images/local.png)
+<h3><b>3. How to deploy the code to AWS</b></h3>
+  <p>The first task for the deployment of the flask application is to build the app by running the following lines of codes:
+
+  ![](images/build_app.png)
+
+  ![](images/zip.png)
+
+  <p>Once the app is built, the second task is to create an application on the <a href="https://aws.amazon.com/free/?all-free-tier.sort-by=item.additionalFields.SortRank&all-free-tier.sort-order=asc&awsf.Free%20Tier%20Types=*all&awsf.Free%20Tier%20Categories=categories%23compute&trk=ps_a134p000006gERGAA2&trkCampaign=acq_paid_search_brand&sc_channel=PS&sc_campaign=acquisition_ANZ&sc_publisher=Google&sc_category=Cloud%20Computing&sc_country=ANZ&sc_geo=APAC&sc_outcome=acq&sc_detail=%2Bamazon%20%2Bweb%20%2Bservices%20%2Bserver&sc_content=Cloud%20Server_bmm&sc_matchtype=b&sc_segment=476956951578&sc_medium=ACQ-P|PS-GO|Brand|Desktop|SU|Cloud%20Computing|Solution|ANZ|EN|Text&s_kwcid=AL!4422!3!476956951578!b!!g!!%2Bamazon%20%2Bweb%20%2Bservices%20%2Bserver&ef_id=CjwKCAiAgvKQBhBbEiwAaPQw3PNkYExyswyeaOuuxT4eInkSq_w_TxbJH80Mb8aMydT7Ah7ankYNOBoCBXYQAvD_BwE:G:s&s_kwcid=AL!4422!3!476956951578!b!!g!!%2Bamazon%20%2Bweb%20%2Bservices%20%2Bserver">AWS Website.</a>
+  <p>One the application is created, I had to create an environment where I uploaded my zip file containing my code.</p>
+
+  ![](images/aws.png)
+  <p><a href="http://homeloanapp-env.eba-t4a32fmj.ap-southeast-2.elasticbeanstalk.com/">Click Here</a> to view my web application and predict whether or not your loan will be approved.
+
+
+
+
+
+
+
+
 
