@@ -55,15 +55,18 @@ Variable|Definition|
 
   ![](images/local.png)
 
-  ![](images/build_app.png)
+<hr>
+<h3><b>Homepage </b></h3>
 
-  ![](images/zip.png)
+  ![](images/homepage.png)
 
-  <p>Once the app is built, the second task is to create an application on the <a href="https://aws.amazon.com/free/?all-free-tier.sort-by=item.additionalFields.SortRank&all-free-tier.sort-order=asc&awsf.Free%20Tier%20Types=*all&awsf.Free%20Tier%20Categories=categories%23compute&trk=ps_a134p000006gERGAA2&trkCampaign=acq_paid_search_brand&sc_channel=PS&sc_campaign=acquisition_ANZ&sc_publisher=Google&sc_category=Cloud%20Computing&sc_country=ANZ&sc_geo=APAC&sc_outcome=acq&sc_detail=%2Bamazon%20%2Bweb%20%2Bservices%20%2Bserver&sc_content=Cloud%20Server_bmm&sc_matchtype=b&sc_segment=476956951578&sc_medium=ACQ-P|PS-GO|Brand|Desktop|SU|Cloud%20Computing|Solution|ANZ|EN|Text&s_kwcid=AL!4422!3!476956951578!b!!g!!%2Bamazon%20%2Bweb%20%2Bservices%20%2Bserver&ef_id=CjwKCAiAgvKQBhBbEiwAaPQw3PNkYExyswyeaOuuxT4eInkSq_w_TxbJH80Mb8aMydT7Ah7ankYNOBoCBXYQAvD_BwE:G:s&s_kwcid=AL!4422!3!476956951578!b!!g!!%2Bamazon%20%2Bweb%20%2Bservices%20%2Bserver">AWS Website.</a>
-  <p>One the application is created, I had to create an environment where I uploaded my zip file containing my code.</p>
+  <h3><b>Visualisations </b></h3>
 
-  <p><a href="http://homeloanapp-env.eba-t4a32fmj.ap-southeast-2.elasticbeanstalk.com/">Click Here</a> to view my web application and predict whether or not your loan will be approved.
+  ![](images/visualisations.png)
 
+   <h3><b>Prediction</b></h3>
+
+  ![](images/predict.png)
 
 
 
