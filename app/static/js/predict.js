@@ -1,6 +1,5 @@
 d3.select("#predict").on("click", () =>{
    
-    // var gender = d3.select("#gender").property("value");
     var gender = d3.select('input[name="gender"]:checked').property("value");
     var married = d3.select('input[name="marital"]:checked').property("value");
     var dependents = d3.select('input[name="dep"]:checked').property("value");
