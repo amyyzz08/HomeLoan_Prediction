@@ -54,8 +54,6 @@ Variable|Definition|
   <p>In terminal, run python app.py in the PythonData environment and copy the url into your web browser
 
   ![](images/local.png)
-<h3><b>3. How to deploy the code to AWS</b></h3>
-  <p>The first task for the deployment of the flask application is to build the app by running the following lines of codes:
 
   ![](images/build_app.png)
 
